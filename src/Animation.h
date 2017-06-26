@@ -26,6 +26,8 @@ class Animation
         void setSpeed(Vector vect) {this->_speed = vect;}
         const Point getPos() {return this->_position;}
         void setPos(Point pt) {this->_position = pt;}
+
+        void update(double delta_t);
 };
 
 #endif // ANIMATION_H

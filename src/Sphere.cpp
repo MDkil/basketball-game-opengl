@@ -12,16 +12,15 @@ Sphere::Sphere(double radius, Color color)
 
 void Sphere::update(double delta_t)
 {
-    // Complete this part
+    this->_animation.update(delta_t);
 }
 
 void Sphere::render()
 {
+    Form::render();
     GLUquadric *quad;
-
     quad = gluNewQuadric();
 
-    Form::render();
     gluSphere(quad, _radius, 1000, 1000);
 
     gluDeleteQuadric(quad);

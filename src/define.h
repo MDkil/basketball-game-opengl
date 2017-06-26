@@ -7,4 +7,6 @@
 #define LENGTH 28
 #define HEIGHT 10
 
+#define GRAVITY 10
+
 #endif // DEFINE_H_INCLUDED

@@ -11,3 +11,9 @@ Animation::Animation(double ph, double th, Vector accel, Vector speed, Point pos
     this->_speed = speed;
     this->_position = position;
 }
+
+void Animation::update(double delta_t)
+{
+    this->_speed += delta_t * this->_acceleration;
+    this->_position.translate(delta_t * this->_speed);
+}

@@ -161,9 +161,7 @@ void BasketballGame::start()
     Point camera_position(WIDTH/2.f, 2.f, LENGTH/2.f + 4.f);
     Point vision_position(WIDTH/2.f, 2.f, 0);
 
-    Vector z = Vector(MOVE_STEP, 0, 0);
-    Vector d = Vector(0, MOVE_STEP, 0);
-    Vector r = Vector(0, 0, MOVE_STEP);
+    Vector force = Vector (0,5, -5);
 
     // Get first "current time"
     previous_time = SDL_GetTicks();
@@ -192,6 +190,12 @@ void BasketballGame::start()
                     case SDLK_ESCAPE:
                         quit = true;
                         break;
+
+                    case SDLK_SPACE:
+
+                        this->_basketball->throw_action(force);
+                        break;
+
                     case SDLK_z:
                         if((camera_position.z - MOVE_STEP) > 1)
                         {

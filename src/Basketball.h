@@ -19,6 +19,7 @@ class Basketball : public Sphere
         const std::string FILE = "../img/Basketball.jpg";
         std::string _file;
         double _mass;
+        bool _throwed;
 };
 
 #endif // BASKETBALL_H

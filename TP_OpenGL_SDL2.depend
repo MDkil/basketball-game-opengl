@@ -3254,10 +3254,10 @@
 	"geometry.h"
 	"forms.h"
 
-1498231334 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\animation.cpp
+1498517286 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\animation.cpp
 	"Animation.h"
 
-1498231364 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\animation.h
+1498517027 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\animation.h
 	"Vector.h"
 
 1498225871 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\geometry.h
@@ -3624,7 +3624,7 @@
 	<cmath>
 	"geometry.h"
 
-1498515180 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\basketballgame.cpp
+1498517728 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\basketballgame.cpp
 	"BasketballGame.h"
 	"CubFace.h"
 	"define.h"
@@ -3671,7 +3671,7 @@
 	"Point.h"
 	"Vector.h"
 
-1498486489 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\sphere.cpp
+1498517405 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\sphere.cpp
 	"Sphere.h"
 	<cmath>
 	<SDL2/SDL_opengl.h>
@@ -3685,16 +3685,17 @@
 	<iostream>
 	<cmath>
 
-1498486648 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\basketball.cpp
+1498517688 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\basketball.cpp
 	"Basketball.h"
 	<GL/GLU.h>
 	<stdlib.h>
+	"define.h"
 
-1498486595 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\basketball.h
+1498515935 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\basketball.h
 	"string.h"
 	"Vector.h"
 	"Color.h"
 	"Sphere.h"
 
-1498508728 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\define.h
+1498517508 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\define.h
 
