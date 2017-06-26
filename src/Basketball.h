@@ -10,9 +10,11 @@
 class Basketball : public Sphere
 {
     public:
-        Basketball(Point pos = Point(), double radius = 1.0, Color color = Color());
+        Basketball(Point pos = Point(), double radius = 1.0, double mass = 1, Color color = Color());
         virtual ~Basketball();
-        void throw_action(Vector force); // TODO: Add throwing parameters ; throw action
+        void setForce();
+        void reset(Point pos);
+        void throw_action(Vector force);
         void update(double delta_t);
         void render();
     private:

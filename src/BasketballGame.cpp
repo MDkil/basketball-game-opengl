@@ -143,7 +143,7 @@ void BasketballGame::loadForms()
     this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(1,0,0), Point(0, HEIGHT, 0), LENGTH, WIDTH, BLUE);
     this->_number_of_forms++;
 
-    this->_basketball = new Basketball(Point(WIDTH/2.f, 2, LENGTH/2.f), 0.24);
+    this->_basketball = new Basketball(Point(WIDTH/2.f, 2, LENGTH/2.f), 0.24, 1);
     this->_forms_list[this->_number_of_forms] = this->_basketball;
     this->_number_of_forms++;
 }
@@ -162,7 +162,7 @@ void BasketballGame::start()
     Point vision_position(WIDTH/2.f, 2.f, 0);
 
     Vector force = Vector (0,5, -5);
-
+    Point tmpPos;
     // Get first "current time"
     previous_time = SDL_GetTicks();
     // While application is running
@@ -191,8 +191,11 @@ void BasketballGame::start()
                         quit = true;
                         break;
 
-                    case SDLK_SPACE:
+                    case SDLK_BACKSPACE:
+                        this->_basketball->reset(Point(WIDTH/2.f, 2, LENGTH/2.f));
+                        break;
 
+                    case SDLK_SPACE:
                         this->_basketball->throw_action(force);
                         break;
 
@@ -226,9 +229,31 @@ void BasketballGame::start()
                     break;
                     case SDLK_f:
                         camera_position.y -= MOVE_STEP;
-                        vision_position.y -= MOVE_STEP;
                     break;
 
+                    case SDLK_UP:
+                        tmpPos = this->_basketball->getAnim().getPos();
+                        tmpPos.translate(Vector(0, 0, -MOVE_STEP));
+                        this->_basketball->getAnim().setPos(tmpPos);
+                    break;
+
+                    case SDLK_DOWN:
+                        tmpPos = this->_basketball->getAnim().getPos();
+                        tmpPos.translate(Vector(0, 0, MOVE_STEP));
+                        this->_basketball->getAnim().setPos(tmpPos);
+                    break;
+
+                    case SDLK_RIGHT:
+                        tmpPos = this->_basketball->getAnim().getPos();
+                        tmpPos.translate(Vector(MOVE_STEP, 0, 0));
+                        this->_basketball->getAnim().setPos(tmpPos);
+                    break;
+
+                    case SDLK_LEFT:
+                        tmpPos = this->_basketball->getAnim().getPos();
+                        tmpPos.translate(Vector(-MOVE_STEP, 0, 0));
+                        this->_basketball->getAnim().setPos(tmpPos);
+                    break;
 
                     default:
                         break;
