@@ -8,6 +8,7 @@
 #include <GL/GLU.h>
 
 #include "Form.h"
+#include "Basketball.h"
 
 // Max number of forms : static allocation
 const int MAX_FORMS_NUMBER = 10;
@@ -26,6 +27,7 @@ class BasketballGame
 
     private:
         // Screen dimension constants
+
         int _screen_width;
         int _screen_heigh;
 
@@ -38,6 +40,8 @@ class BasketballGame
         // Form List
         Form* _forms_list[MAX_FORMS_NUMBER];
         int _number_of_forms;
+
+        Basketball * _basketball;
 
         // Starts up SDL, creates window, and initializes OpenGL
         bool initSDL();

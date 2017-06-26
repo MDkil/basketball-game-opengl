@@ -67,6 +67,7 @@
 		<Unit filename="src/Sphere.h" />
 		<Unit filename="src/Vector.cpp" />
 		<Unit filename="src/Vector.h" />
+		<Unit filename="src/define.h" />
 		<Unit filename="src/first_prog.cpp" />
 		<Extensions>
 			<code_completion />

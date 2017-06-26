@@ -32,13 +32,10 @@ void CubeFace::render()
     Form::render();
     glBegin(GL_QUADS);
     {
-        glColor3f(1,1,0);
+        glColor3f(_color._r,_color._g,_color._b);
         glVertex3d(p1.x, p1.y, p1.z);
-        glColor3f(0,1,1);
         glVertex3d(p2.x, p2.y, p2.z);
-        glColor3f(1,0,1);
         glVertex3d(p3.x, p3.y, p3.z);
-        glColor3f(0,1,0);
         glVertex3d(p4.x, p4.y, p4.z);
     }
     glEnd();

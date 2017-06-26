@@ -94,7 +94,7 @@ bool BasketballGame::initGL()
     glViewport(0, 0, this->_screen_width, this->_screen_heigh);
 
     // Fix aspect ratio and depth clipping planes
-    gluPerspective(40.0, (GLdouble)this->_screen_width/this->_screen_heigh, 1.0, 100.0);
+    gluPerspective(40.0, (GLdouble)this->_screen_width/this->_screen_heigh, 1.0, 100);
 
     // Initialize Modelview Matrix
     glMatrixMode(GL_MODELVIEW);
@@ -119,25 +119,32 @@ bool BasketballGame::initGL()
 
 void BasketballGame::loadForms()
 {
-//    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,1,0), Point(-0, -0, -0));
-//    this->_number_of_forms++;
-//
-//    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,0,1), Point(-0, -0, -0));
-//    this->_number_of_forms++;
-//
-//    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(0,1,0), Point(-0, -0, -0));
-//    this->_number_of_forms++;
-//
-//    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,0,1), Point(0, 1, 0));
-//    this->_number_of_forms++;
-//
-//    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,1,0), Vector(0,0,1), Point(1, 0, 0));
-//    this->_number_of_forms++;
-//
-//    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,1,0), Point(0, 0, 1));
-//    this->_number_of_forms++;
+    // front
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,1,0), Point(0, 0, 0), WIDTH, 10.f, GREEN);
+    this->_number_of_forms++;
 
-    this->_forms_list[this->_number_of_forms] = new Basketball();
+    // Back
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,1,0), Point(0, 0, 28), WIDTH, 10.f, GREEN);
+    this->_number_of_forms++;
+
+    // right
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(0,1,0), Point(WIDTH, 0, 0), 28.f, 10.f, RED);
+    this->_number_of_forms++;
+
+    // right
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(0,1,0), Point(0, 0, 0), LENGTH, 10.f, RED);
+    this->_number_of_forms++;
+
+    // buttom
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(1,0,0), Point(0, 0, 0), LENGTH, WIDTH, BLUE);
+    this->_number_of_forms++;
+
+    // buttom
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(1,0,0), Point(0, HEIGHT, 0), LENGTH, WIDTH, BLUE);
+    this->_number_of_forms++;
+
+    this->_basketball = new Basketball(Point(WIDTH/2.f, 2, LENGTH/2.f), 0.24);
+    this->_forms_list[this->_number_of_forms] = this->_basketball;
     this->_number_of_forms++;
 }
 
@@ -151,8 +158,12 @@ void BasketballGame::start()
     SDL_Event event;
 
     // Camera position
-    Point camera_position(0, 0.0, 5.0);
-    Point vision_position(0, 0.0, 0.0);
+    Point camera_position(WIDTH/2.f, 2.f, LENGTH/2.f + 4.f);
+    Point vision_position(WIDTH/2.f, 2.f, 0);
+
+    Vector z = Vector(MOVE_STEP, 0, 0);
+    Vector d = Vector(0, MOVE_STEP, 0);
+    Vector r = Vector(0, 0, MOVE_STEP);
 
     // Get first "current time"
     previous_time = SDL_GetTicks();
@@ -182,35 +193,38 @@ void BasketballGame::start()
                         quit = true;
                         break;
                     case SDLK_z:
-                        camera_position.z -= MOVE_STEP;
+                        if((camera_position.z - MOVE_STEP) > 1)
+                        {
+                            camera_position.z -= MOVE_STEP;
+                        }
                         break;
                     case SDLK_s:
-                        camera_position.z += MOVE_STEP;
+                        if((camera_position.z + MOVE_STEP) < LENGTH)
+                        {
+                            camera_position.z += MOVE_STEP;
+                        }
                     break;
                     case SDLK_d:
-                        camera_position.x += MOVE_STEP;
-                        vision_position.x += MOVE_STEP;
+                        if((camera_position.x + MOVE_STEP) < WIDTH)
+                        {
+                            camera_position.x += MOVE_STEP;
+                        }
                     break;
                     case SDLK_q:
-                        camera_position.x -= MOVE_STEP;
-                        vision_position.x -= MOVE_STEP;
+                        if((camera_position.x - MOVE_STEP) > 0)
+                        {
+                            camera_position.x -= MOVE_STEP;
+                        }
                     break;
 
                     case SDLK_r:
                         camera_position.y += MOVE_STEP;
-                        vision_position.y += MOVE_STEP;
                     break;
                     case SDLK_f:
                         camera_position.y -= MOVE_STEP;
                         vision_position.y -= MOVE_STEP;
                     break;
 
-                    case SDLK_e:
-                        vision_position.x += MOVE_STEP;
-                    break;
-                    case SDLK_a:
-                        vision_position.x -= MOVE_STEP;
-                    break;
 
                     default:
                         break;
@@ -270,7 +284,7 @@ void BasketballGame::render(const Point &cam_pos, const Point &vision_pos)
     //glRotated(-45, 0, 1, 0);
     //glRotated(30, 1, 0, -1);
 
-    glScaled(0.3, 0.3, 0.3);
+    glScaled(1.0, 1.0, 1.0);
 
     // X, Y and Z axis
     glPushMatrix(); // Preserve the camera viewing point for further forms

@@ -2,8 +2,9 @@
 #define DEFINE_H_INCLUDED
 
 
-#define MOVE_STEP 0.1
-#define METER_TO_OPENGL = 1
-
+#define MOVE_STEP 0.5
+#define WIDTH 15
+#define LENGTH 28
+#define HEIGHT 10
 
 #endif // DEFINE_H_INCLUDED
