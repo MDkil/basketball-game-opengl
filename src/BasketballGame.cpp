@@ -164,6 +164,9 @@ void BasketballGame::start()
     Point tmpPos;
     // Get first "current time"
     previous_time = SDL_GetTicks();
+
+    //
+
     // While application is running
     while(!quit)
     {

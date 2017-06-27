@@ -6,6 +6,7 @@
 #include "Vector.h"
 #include "Color.h"
 #include "Sphere.h"
+#include "Form.h"
 
 class Basketball : public Sphere
 {
@@ -17,9 +18,11 @@ class Basketball : public Sphere
         void throw_action(Vector force);
         void update(double delta_t);
         void render();
+        void setForms(Form * forms);
 
         bool _throwed;
     private:
+        Form * _forms;
         const std::string FILE = "../img/Basketball.jpg";
         std::string _file;
         double _mass;

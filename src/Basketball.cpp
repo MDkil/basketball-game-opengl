@@ -32,6 +32,11 @@ void Basketball::update(double delta_t)
     }
 }
 
+void Basketball::setForms(Form * forms)
+{
+    this->_forms = forms;
+}
+
 void Basketball::throw_action(Vector force)
 {
     this->_throwed = true;

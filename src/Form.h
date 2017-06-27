@@ -3,6 +3,7 @@
 
 #include "Color.h"
 #include "Animation.h"
+#include "Form.h"
 
 class Form
 {
