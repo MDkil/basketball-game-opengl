@@ -2,6 +2,7 @@
 #define SPHERE_H
 
 #include "Form.h"
+#include "Vector.h"
 
 class Sphere : public Form
 {
@@ -15,6 +16,7 @@ private:
         void setRadius(double radius) {this->_radius = radius;}
         void update(double delta_t);
         void render();
+        bool collusion(Basketball * basketball);
 };
 
 #endif // SPHERE_H

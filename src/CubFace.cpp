@@ -3,6 +3,11 @@
 #include <SDL2/SDL_opengl.h>
 #include <GL/GLU.h>
 
+#include "define.h"
+#include "Basketball.h"
+
+using namespace std;
+
 CubeFace::CubeFace(Vector v1, Vector v2, Point org, double l, double w, Color color)
 {
     this->_vdir1 = 1.0 / v1.norm() * v1;
@@ -13,6 +18,41 @@ CubeFace::CubeFace(Vector v1, Vector v2, Point org, double l, double w, Color co
     this->_color = color;
 }
 
+
+bool CubeFace::collusion(Basketball * basketball)
+{
+    Vector vecteur_normal = this->_vdir1 ^ this->_vdir2;
+    Vector v1 = Vector(this->getAnim().getPos(), basketball->getAnim().getPos());
+
+    double distance = abs(vecteur_normal * v1);
+
+    if(distance < basketball->getRadius())
+    {
+        Vector speed = basketball->getAnim().getSpeed();
+        if(vecteur_normal.x != 0)
+        {
+            speed.x *= -1;
+        }
+        if(vecteur_normal.y != 0)
+        {
+            speed.y *= -1;
+        }
+        if(vecteur_normal.z != 0)
+        {
+            speed.z *= -1;
+        }
+
+        speed =  (1.f - BORDER_RESISTANCE )* speed ;
+
+        basketball->getAnim().setSpeed(speed);
+
+        return true;
+
+    }
+
+
+    return false;
+}
 
 void CubeFace::update(double delta_t)
 {

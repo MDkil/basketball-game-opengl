@@ -4,6 +4,9 @@
 #include "Color.h"
 #include "Animation.h"
 #include "Form.h"
+#include "Vector.h"
+
+class Basketball;
 
 class Form
 {
@@ -20,6 +23,8 @@ class Form
         virtual void update(double delta_t) = 0;
         // Virtual method : Form is a generic type, only setting color and reference position
         virtual void render();
+
+        virtual bool collusion(Basketball * basketball) = 0;
 };
 
 #endif // FORM_H

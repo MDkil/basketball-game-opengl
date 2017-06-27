@@ -23,6 +23,8 @@ class BasketballGame
 
         virtual ~BasketballGame();
 
+        Form* _forms_list[MAX_FORMS_NUMBER];
+
     protected:
 
     private:
@@ -38,7 +40,7 @@ class BasketballGame
         SDL_GLContext _context;
 
         // Form List
-        Form* _forms_list[MAX_FORMS_NUMBER];
+
         int _number_of_forms;
 
         Basketball * _basketball;

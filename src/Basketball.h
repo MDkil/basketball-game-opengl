@@ -8,24 +8,25 @@
 #include "Sphere.h"
 #include "Form.h"
 
+class BasketballGame;
+
 class Basketball : public Sphere
 {
     public:
-        Basketball(Point pos = Point(), double radius = 1.0, double mass = 1, Color color = Color());
+        Basketball(Point pos = Point(), double radius = 1.0, double mass = 1, Color color = Color(), BasketballGame * context = NULL);
         virtual ~Basketball();
         void setForce();
         void reset(Point pos);
         void throw_action(Vector force);
         void update(double delta_t);
         void render();
-        void setForms(Form * forms);
+        void setForms(Form * forms[10]);
 
         bool _throwed;
     private:
-        Form * _forms;
-        const std::string FILE = "../img/Basketball.jpg";
         std::string _file;
         double _mass;
+        BasketballGame * _context;
 
 };
 

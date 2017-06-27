@@ -25,3 +25,8 @@ void Sphere::render()
 
     gluDeleteQuadric(quad);
 }
+
+bool Sphere::collusion(Basketball * basketball)
+{
+    return false;
+}

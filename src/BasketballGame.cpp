@@ -7,12 +7,11 @@
 
 using namespace std;
 
-
 BasketballGame::BasketballGame(int screen_width, int screen_height)
 {
     this->_screen_width = screen_width;
     this->_screen_heigh = screen_height;
-    this->_force = Vector (0,10, -10);
+    this->_force = Vector (INIT_FORCE);
     if(!this->initSDL())
     {
         cout << "Failed to initialize SDL!" << endl;
@@ -143,7 +142,8 @@ void BasketballGame::loadForms()
     this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(1,0,0), Point(0, HEIGHT, 0), LENGTH, WIDTH, BLUE);
     this->_number_of_forms++;
 
-    this->_basketball = new Basketball(Point(WIDTH/2.f, 2.f, LENGTH/2.f), 0.24f, 1);
+    // Basketball
+    this->_basketball = new Basketball(Point(WIDTH/2.f, 2.f, LENGTH/2.f), 0.24f, 1, WHITE, this);
     this->_forms_list[this->_number_of_forms] = this->_basketball;
     this->_number_of_forms++;
 }
@@ -164,8 +164,6 @@ void BasketballGame::start()
     Point tmpPos;
     // Get first "current time"
     previous_time = SDL_GetTicks();
-
-    //
 
     // While application is running
     while(!quit)
@@ -195,6 +193,7 @@ void BasketballGame::start()
 
                     case SDLK_BACKSPACE:
                         this->_basketball->reset(Point(WIDTH/2.f, 2, LENGTH/2.f));
+                        this->_force = Vector (INIT_FORCE);
                         break;
 
                     case SDLK_SPACE:

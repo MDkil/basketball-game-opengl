@@ -15,3 +15,4 @@ double distance(Point p1, Point p2)
 
     return vect.norm();
 }
+
