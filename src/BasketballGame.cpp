@@ -12,7 +12,7 @@ BasketballGame::BasketballGame(int screen_width, int screen_height)
 {
     this->_screen_width = screen_width;
     this->_screen_heigh = screen_height;
-    this->_force = Vector (0,5, -5);
+    this->_force = Vector (0,10, -10);
     if(!this->initSDL())
     {
         cout << "Failed to initialize SDL!" << endl;
@@ -254,6 +254,30 @@ void BasketballGame::start()
                         this->_basketball->getAnim().setPos(tmpPos);
                     break;
 
+                    case SDLK_i:
+                        this->_force += Vector(0, MOVE_STEP, 0);
+                    break;
+
+                    case SDLK_k:
+                        this->_force += Vector(0, -MOVE_STEP, 0);
+                    break;
+
+                    case SDLK_l:
+                        this->_force += Vector(MOVE_STEP, 0, 0);
+                    break;
+
+                    case SDLK_j:
+                        this->_force += Vector(-MOVE_STEP, 0, 0);
+                    break;
+
+                    case SDLK_p:
+                        this->_force += Vector(0, 0, -MOVE_STEP);
+                    break;
+
+                    case SDLK_m:
+                        this->_force += Vector(0, 0, MOVE_STEP);
+                    break;
+
                     default:
                         break;
                 }
@@ -329,15 +353,9 @@ void BasketballGame::render(const Point &cam_pos, const Point &vision_pos)
         glColor3f(0.0f, 0.0f, 1.0f);
         glVertex3i(0, 0, 0);
         glVertex3i(0, 0, 1);
-
-        if(! this->_basketball->_throwed)
-        {
-            glColor3f(1.0f, 1.0f, 1.0f);
-            glVertex3i(this->_basketball->getAnim().getPos().x, this->_basketball->getAnim().getPos().y, this->_basketball->getAnim().getPos().z);
-            glVertex3i(this->_basketball->getAnim().getPos().x + this->_force.x, this->_basketball->getAnim().getPos().y + this->_force.y, this->_basketball->getAnim().getPos().z + + this->_force.z);
-        }
     }
     glEnd();
+
     glPopMatrix(); // Restore the camera viewing point for next object
 
     // Render the list of forms
@@ -349,6 +367,15 @@ void BasketballGame::render(const Point &cam_pos, const Point &vision_pos)
         glPopMatrix(); // Restore the camera viewing point for next object
         i++;
     }
+    if(!this->_basketball->_throwed)
+    {
+        Point pos = this->_basketball->getAnim().getPos();
+        CubeFace * _tmp = new CubeFace(Vector(1,0,0), this->_force, Point(pos.x - 0.01f, pos.y, pos.z), 0.02f, this->_force.norm(), WHITE);
+        _tmp->render();
+        delete _tmp;
+    }
+    // my force vector
+
 }
 
 void BasketballGame::close(SDL_Window** window)
