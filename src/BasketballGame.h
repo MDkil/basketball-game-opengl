@@ -42,6 +42,7 @@ class BasketballGame
         int _number_of_forms;
 
         Basketball * _basketball;
+        Vector _force;
 
         // Starts up SDL, creates window, and initializes OpenGL
         bool initSDL();

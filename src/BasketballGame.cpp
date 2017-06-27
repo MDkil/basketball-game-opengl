@@ -12,7 +12,7 @@ BasketballGame::BasketballGame(int screen_width, int screen_height)
 {
     this->_screen_width = screen_width;
     this->_screen_heigh = screen_height;
-
+    this->_force = Vector (0,5, -5);
     if(!this->initSDL())
     {
         cout << "Failed to initialize SDL!" << endl;
@@ -161,7 +161,6 @@ void BasketballGame::start()
     Point camera_position(WIDTH/2.f, 2.f, LENGTH/2.f + 4.f);
     Point vision_position(WIDTH/2.f, 2.f, 0);
 
-    Vector force = Vector (0,5, -5);
     Point tmpPos;
     // Get first "current time"
     previous_time = SDL_GetTicks();
@@ -196,7 +195,7 @@ void BasketballGame::start()
                         break;
 
                     case SDLK_SPACE:
-                        this->_basketball->throw_action(force);
+                        this->_basketball->throw_action(this->_force);
                         break;
 
                     case SDLK_z:
@@ -330,6 +329,13 @@ void BasketballGame::render(const Point &cam_pos, const Point &vision_pos)
         glColor3f(0.0f, 0.0f, 1.0f);
         glVertex3i(0, 0, 0);
         glVertex3i(0, 0, 1);
+
+        if(! this->_basketball->_throwed)
+        {
+            glColor3f(1.0f, 1.0f, 1.0f);
+            glVertex3i(this->_basketball->getAnim().getPos().x, this->_basketball->getAnim().getPos().y, this->_basketball->getAnim().getPos().z);
+            glVertex3i(this->_basketball->getAnim().getPos().x + this->_force.x, this->_basketball->getAnim().getPos().y + this->_force.y, this->_basketball->getAnim().getPos().z + + this->_force.z);
+        }
     }
     glEnd();
     glPopMatrix(); // Restore the camera viewing point for next object

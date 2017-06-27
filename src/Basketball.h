@@ -17,11 +17,13 @@ class Basketball : public Sphere
         void throw_action(Vector force);
         void update(double delta_t);
         void render();
+
+        bool _throwed;
     private:
         const std::string FILE = "../img/Basketball.jpg";
         std::string _file;
         double _mass;
-        bool _throwed;
+
 };
 
 #endif // BASKETBALL_H
