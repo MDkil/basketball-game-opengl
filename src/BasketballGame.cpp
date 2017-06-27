@@ -143,7 +143,7 @@ void BasketballGame::loadForms()
     this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(1,0,0), Point(0, HEIGHT, 0), LENGTH, WIDTH, BLUE);
     this->_number_of_forms++;
 
-    this->_basketball = new Basketball(Point(WIDTH/2.f, 2, LENGTH/2.f), 0.24, 1);
+    this->_basketball = new Basketball(Point(WIDTH/2.f, 2, LENGTH/2.f), 0.24f, 1);
     this->_forms_list[this->_number_of_forms] = this->_basketball;
     this->_number_of_forms++;
 }
