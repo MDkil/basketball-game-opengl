@@ -118,8 +118,6 @@ bool BasketballGame::initGL()
 
 void BasketballGame::loadForms()
 {
-
-
     // front
     this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,1,0), Point(0, 0, 0),"img/wall.jpg", 1, WIDTH, 10.f);
     this->_number_of_forms++;
@@ -348,7 +346,7 @@ void BasketballGame::render(const Point &cam_pos, const Point &vision_pos)
     // Render the coordinates system
     glBegin(GL_LINES);
     {
-        glColor3f(1.0f, 0.0f, 0.0f);
+        /*glColor3f(1.0f, 0.0f, 0.0f);
         glVertex3i(0, 0, 0);
         glVertex3i(1, 0, 0);
         glColor3f(0.0f, 1.0f, 0.0f);
@@ -356,7 +354,7 @@ void BasketballGame::render(const Point &cam_pos, const Point &vision_pos)
         glVertex3i(0, 1, 0);
         glColor3f(0.0f, 0.0f, 1.0f);
         glVertex3i(0, 0, 0);
-        glVertex3i(0, 0, 1);
+        glVertex3i(0, 0, 1);*/
     }
     glEnd();
 
