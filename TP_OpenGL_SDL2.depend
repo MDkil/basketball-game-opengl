@@ -3721,7 +3721,7 @@
 
 1498643675 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\coordinates.h
 
-1498657304 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketball.cpp
+1498657776 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketball.cpp
 	"Basketball.h"
 	<GL/GLU.h>
 	<stdlib.h>
@@ -4159,4 +4159,14 @@
 	"SDL_version.h"
 	"begin_code.h"
 	"close_code.h"
+
+1498658864 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\ringvertical.cpp
+	"RingVertical.h"
+	<cmath>
+	<SDL2/SDL_opengl.h>
+	<GL/GLU.h>
+	"define.h"
+
+1498658899 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\ringvertical.h
+	"Form.h"
 
