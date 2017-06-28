@@ -17,6 +17,7 @@ void Sphere::update(double delta_t)
 
 void Sphere::render()
 {
+    _color=Color(1,1,1);
     Form::render();
     GLUquadric *quad;
     quad = gluNewQuadric();

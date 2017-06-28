@@ -118,31 +118,33 @@ bool BasketballGame::initGL()
 
 void BasketballGame::loadForms()
 {
+
+
     // front
-    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,1,0), Point(0, 0, 0), WIDTH, 10.f, GREEN);
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,1,0), Point(0, 0, 0),"images/mur3.jpg", 1, WIDTH, 10.f);
     this->_number_of_forms++;
 
     // Back
-    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,1,0), Point(0, 0, 28), WIDTH, 10.f, GREEN);
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,1,0), Point(0, 0, 28),"images/mur3.jpg", 1, WIDTH, 10.f);
     this->_number_of_forms++;
 
     // right
-    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(0,1,0), Point(WIDTH, 0, 0), 28.f, 10.f, RED);
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(0,1,0), Point(WIDTH, 0, 0),"images/mur3.jpg", 1, 28.f, 10.f);
     this->_number_of_forms++;
 
-    // right
-    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(0,1,0), Point(0, 0, 0), LENGTH, 10.f, RED);
-    this->_number_of_forms++;
-
-    // buttom
-    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(1,0,0), Point(0, 0, 0), LENGTH, WIDTH, BLUE);
+    // left
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(0,1,0), Point(0, 0, 0), "images/mur3.jpg", 1,LENGTH, 10.f);
     this->_number_of_forms++;
 
     // buttom
-    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(1,0,0), Point(0, HEIGHT, 0), LENGTH, WIDTH, BLUE);
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(1,0,0), Point(0, 0, 0),"images/court.jpg", 1, LENGTH, WIDTH);
     this->_number_of_forms++;
 
-    // Basketball
+    // top
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(1,0,0), Point(0, HEIGHT, 0),"images/plafond.jpg", 10, LENGTH, WIDTH);
+    this->_number_of_forms++;
+
+        // Basketball
     this->_basketball = new Basketball(Point(WIDTH/2.f, 2.f, LENGTH/2.f), 0.24f, 1, WHITE, this);
     this->_forms_list[this->_number_of_forms] = this->_basketball;
     this->_number_of_forms++;
@@ -187,101 +189,101 @@ void BasketballGame::start()
                 switch(key_pressed)
                 {
                 // Quit the program when 'q' or Escape keys are pressed
-                    case SDLK_ESCAPE:
-                        quit = true;
-                        break;
-
-                    case SDLK_BACKSPACE:
-                        this->_basketball->reset(Point(WIDTH/2.f, 2, LENGTH/2.f));
-                        this->_force = Vector (INIT_FORCE);
-                        break;
-
-                    case SDLK_SPACE:
-                        this->_basketball->throw_action(this->_force);
-                        break;
-
-                    case SDLK_z:
-                        if((camera_position.z - MOVE_STEP) > 1)
-                        {
-                            camera_position.z -= MOVE_STEP;
-                        }
-                        break;
-                    case SDLK_s:
-                        if((camera_position.z + MOVE_STEP) < LENGTH)
-                        {
-                            camera_position.z += MOVE_STEP;
-                        }
-                    break;
-                    case SDLK_d:
-                        if((camera_position.x + MOVE_STEP) < WIDTH)
-                        {
-                            camera_position.x += MOVE_STEP;
-                        }
-                    break;
-                    case SDLK_q:
-                        if((camera_position.x - MOVE_STEP) > 0)
-                        {
-                            camera_position.x -= MOVE_STEP;
-                        }
+                case SDLK_ESCAPE:
+                    quit = true;
                     break;
 
-                    case SDLK_r:
-                        camera_position.y += MOVE_STEP;
-                    break;
-                    case SDLK_f:
-                        camera_position.y -= MOVE_STEP;
+                case SDLK_BACKSPACE:
+                    this->_basketball->reset(Point(WIDTH/2.f, 2, LENGTH/2.f));
+                    this->_force = Vector (INIT_FORCE);
                     break;
 
-                    case SDLK_UP:
-                        tmpPos = this->_basketball->getAnim().getPos();
-                        tmpPos.translate(Vector(0, 0, -MOVE_STEP));
-                        this->_basketball->getAnim().setPos(tmpPos);
+                case SDLK_SPACE:
+                    this->_basketball->throw_action(this->_force);
                     break;
 
-                    case SDLK_DOWN:
-                        tmpPos = this->_basketball->getAnim().getPos();
-                        tmpPos.translate(Vector(0, 0, MOVE_STEP));
-                        this->_basketball->getAnim().setPos(tmpPos);
+                case SDLK_z:
+                    if((camera_position.z - MOVE_STEP) > 1)
+                    {
+                        camera_position.z -= MOVE_STEP;
+                    }
+                    break;
+                case SDLK_s:
+                    if((camera_position.z + MOVE_STEP) < LENGTH)
+                    {
+                        camera_position.z += MOVE_STEP;
+                    }
+                    break;
+                case SDLK_d:
+                    if((camera_position.x + MOVE_STEP) < WIDTH)
+                    {
+                        camera_position.x += MOVE_STEP;
+                    }
+                    break;
+                case SDLK_q:
+                    if((camera_position.x - MOVE_STEP) > 0)
+                    {
+                        camera_position.x -= MOVE_STEP;
+                    }
                     break;
 
-                    case SDLK_RIGHT:
-                        tmpPos = this->_basketball->getAnim().getPos();
-                        tmpPos.translate(Vector(MOVE_STEP, 0, 0));
-                        this->_basketball->getAnim().setPos(tmpPos);
+                case SDLK_r:
+                    camera_position.y += MOVE_STEP;
+                    break;
+                case SDLK_f:
+                    camera_position.y -= MOVE_STEP;
                     break;
 
-                    case SDLK_LEFT:
-                        tmpPos = this->_basketball->getAnim().getPos();
-                        tmpPos.translate(Vector(-MOVE_STEP, 0, 0));
-                        this->_basketball->getAnim().setPos(tmpPos);
+                case SDLK_UP:
+                    tmpPos = this->_basketball->getAnim().getPos();
+                    tmpPos.translate(Vector(0, 0, -MOVE_STEP));
+                    this->_basketball->getAnim().setPos(tmpPos);
                     break;
 
-                    case SDLK_i:
-                        this->_force += Vector(0, MOVE_STEP, 0);
+                case SDLK_DOWN:
+                    tmpPos = this->_basketball->getAnim().getPos();
+                    tmpPos.translate(Vector(0, 0, MOVE_STEP));
+                    this->_basketball->getAnim().setPos(tmpPos);
                     break;
 
-                    case SDLK_k:
-                        this->_force += Vector(0, -MOVE_STEP, 0);
+                case SDLK_RIGHT:
+                    tmpPos = this->_basketball->getAnim().getPos();
+                    tmpPos.translate(Vector(MOVE_STEP, 0, 0));
+                    this->_basketball->getAnim().setPos(tmpPos);
                     break;
 
-                    case SDLK_l:
-                        this->_force += Vector(MOVE_STEP, 0, 0);
+                case SDLK_LEFT:
+                    tmpPos = this->_basketball->getAnim().getPos();
+                    tmpPos.translate(Vector(-MOVE_STEP, 0, 0));
+                    this->_basketball->getAnim().setPos(tmpPos);
                     break;
 
-                    case SDLK_j:
-                        this->_force += Vector(-MOVE_STEP, 0, 0);
+                case SDLK_i:
+                    this->_force += Vector(0, MOVE_STEP, 0);
                     break;
 
-                    case SDLK_p:
-                        this->_force += Vector(0, 0, -MOVE_STEP);
+                case SDLK_k:
+                    this->_force += Vector(0, -MOVE_STEP, 0);
                     break;
 
-                    case SDLK_m:
-                        this->_force += Vector(0, 0, MOVE_STEP);
+                case SDLK_l:
+                    this->_force += Vector(MOVE_STEP, 0, 0);
                     break;
 
-                    default:
-                        break;
+                case SDLK_j:
+                    this->_force += Vector(-MOVE_STEP, 0, 0);
+                    break;
+
+                case SDLK_p:
+                    this->_force += Vector(0, 0, -MOVE_STEP);
+                    break;
+
+                case SDLK_m:
+                    this->_force += Vector(0, 0, MOVE_STEP);
+                    break;
+
+                default:
+                    break;
                 }
                 break;
             default:
@@ -313,7 +315,7 @@ void BasketballGame::start()
 // Updating forms for animation
 void BasketballGame::update(double delta_t)
 {
-     // Update the list of forms
+    // Update the list of forms
     unsigned short i = 0;
     while(this->_forms_list[i] != NULL)
     {
@@ -372,7 +374,7 @@ void BasketballGame::render(const Point &cam_pos, const Point &vision_pos)
     if(!this->_basketball->_throwed)
     {
         Point pos = this->_basketball->getAnim().getPos();
-        CubeFace * _tmp = new CubeFace(Vector(1,0,0), this->_force, Point(pos.x - 0.01f, pos.y, pos.z), 0.02f, this->_force.norm(), WHITE);
+        CubeFace * _tmp = new CubeFace(Vector(1,0,0), this->_force, Point(pos.x - 0.01f, pos.y, pos.z),"", 0.02f, this->_force.norm());
         _tmp->render();
         delete _tmp;
     }

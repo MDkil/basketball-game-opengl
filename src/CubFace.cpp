@@ -8,14 +8,15 @@
 
 using namespace std;
 
-CubeFace::CubeFace(Vector v1, Vector v2, Point org, double l, double w, Color color)
+CubeFace::CubeFace(Vector v1, Vector v2, Point org,char* tex, int divImage, double l, double w)
 {
     this->_vdir1 = 1.0 / v1.norm() * v1;
     this->_vdir2 = 1.0 / v2.norm() * v2;
     this->_animation.setPos(org);
+    this->_divImage = divImage;
     this->_length = l;
     this->_width = w;
-    this->_color = color;
+    this->_texture = loadTexture(tex);
 }
 
 
@@ -68,14 +69,20 @@ void CubeFace::render()
     p3 = p2;
     p3.translate(this->_width*this->_vdir2);
     p4.translate(this->_width*this->_vdir2);
+    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, _texture);
 
     Form::render();
     glBegin(GL_QUADS);
     {
-        glColor3f(_color._r,_color._g,_color._b);
+        glTexCoord2d(0,0);
         glVertex3d(p1.x, p1.y, p1.z);
+        glTexCoord2d(1*_divImage,0);
         glVertex3d(p2.x, p2.y, p2.z);
+        glTexCoord2d(1*_divImage,1*_divImage);
         glVertex3d(p3.x, p3.y, p3.z);
+        glTexCoord2d(0,1*_divImage);
         glVertex3d(p4.x, p4.y, p4.z);
     }
     glEnd();

@@ -5,6 +5,7 @@
 #include "Animation.h"
 #include "Form.h"
 #include "Vector.h"
+#include "sdlglutils.h"
 
 class Basketball;
 

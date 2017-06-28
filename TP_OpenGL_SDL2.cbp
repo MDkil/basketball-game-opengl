@@ -69,6 +69,8 @@
 		<Unit filename="src/Vector.h" />
 		<Unit filename="src/define.h" />
 		<Unit filename="src/first_prog.cpp" />
+		<Unit filename="src/sdlglutils.cpp" />
+		<Unit filename="src/sdlglutils.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
