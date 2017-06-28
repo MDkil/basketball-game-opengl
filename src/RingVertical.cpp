@@ -29,7 +29,7 @@ void RingVertical::render() {
 
      for(i = 0, phi = 0.; i <= steps; i ++, phi += dphi) {
         glColor3f(1., 0., 0.); glVertex3f(_R*cos(phi),  -_H/2., _R*sin(phi));
-        glColor3f(0., 1., 0.); glVertex3f(_R*cos(phi),  _H/2.,_R*sin(phi));
+        glColor3f(1., 0., 0.); glVertex3f(_R*cos(phi),  _H/2.,_R*sin(phi));
 
     }
     glEnd();

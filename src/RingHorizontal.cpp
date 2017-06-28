@@ -28,8 +28,8 @@ void RingHorizontal::render() {
     glBegin(GL_TRIANGLE_STRIP);
 
     for(i = 0, phi = 0.; i <= steps; i ++, phi += dphi) {
-        glColor3f(1., 0., 0.); glVertex3f(_R1*cos(phi), 0, _R1*sin(phi));
-        glColor3f(0., 1., 0.); glVertex3f(_R2*cos(phi), 0, _R2*sin(phi));
+        glColor3f(1., 0.5, 0.); glVertex3f(_R1*cos(phi), 0, _R1*sin(phi));
+        glColor3f(1., 0.5, 0.); glVertex3f(_R2*cos(phi), 0, _R2*sin(phi));
     }
     glEnd();
 }
