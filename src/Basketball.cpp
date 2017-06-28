@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include "BasketballGame.h"
 #include "define.h"
+#include "sdlglutils.h"
 
 using namespace std;
 
@@ -12,6 +13,7 @@ Basketball::Basketball(Point pos, double radius, double mass, Color color, Baske
     this->_throwed = false;
     this->_mass = mass;
     this->_context = context;
+    ball = loadTexture(BASKETBALL_IMAGE.c_str());
 }
 
 Basketball::~Basketball()
@@ -20,7 +22,20 @@ Basketball::~Basketball()
 
 void Basketball::render()
 {
-    Sphere::render();
+    Form::render();
+
+    GLUquadricObj *quad;
+
+    quad = gluNewQuadric();
+    gluQuadricNormals(quad, GLU_SMOOTH);
+    gluQuadricTexture(quad, GL_TRUE);
+    glEnable(GL_TEXTURE_2D);
+
+    glBindTexture(GL_TEXTURE_2D, ball);
+
+    gluSphere(quad, getRadius(), 1000, 1000);
+
+    gluDeleteQuadric(quad);
 }
 
 void Basketball::update(double delta_t)

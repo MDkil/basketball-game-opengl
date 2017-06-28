@@ -3721,14 +3721,15 @@
 
 1498643675 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\coordinates.h
 
-1498643675 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketball.cpp
+1498657304 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketball.cpp
 	"Basketball.h"
 	<GL/GLU.h>
 	<stdlib.h>
 	"BasketballGame.h"
 	"define.h"
+	"sdlglutils.h"
 
-1498643675 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketball.h
+1498657768 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketball.h
 	"string.h"
 	"Vector.h"
 	"Color.h"
@@ -4094,7 +4095,7 @@
 
 1498643675 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\define.h
 
-1498655152 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketballgame.cpp
+1498656959 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketballgame.cpp
 	"BasketballGame.h"
 	"CubFace.h"
 	"define.h"
