@@ -121,27 +121,27 @@ void BasketballGame::loadForms()
 
 
     // front
-    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,1,0), Point(0, 0, 0),"images/mur3.jpg", 1, WIDTH, 10.f);
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,1,0), Point(0, 0, 0),"img/wall.jpg", 1, WIDTH, 10.f);
     this->_number_of_forms++;
 
     // Back
-    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,1,0), Point(0, 0, 28),"images/mur3.jpg", 1, WIDTH, 10.f);
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,1,0), Point(0, 0, 28),"img/wall.jpg", 1, WIDTH, 10.f);
     this->_number_of_forms++;
 
     // right
-    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(0,1,0), Point(WIDTH, 0, 0),"images/mur3.jpg", 1, 28.f, 10.f);
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(0,1,0), Point(WIDTH, 0, 0),"img/wall.jpg", 1, 28.f, 10.f);
     this->_number_of_forms++;
 
     // left
-    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(0,1,0), Point(0, 0, 0), "images/mur3.jpg", 1,LENGTH, 10.f);
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(0,1,0), Point(0, 0, 0), "img/wall.jpg", 1,LENGTH, 10.f);
     this->_number_of_forms++;
 
     // buttom
-    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(1,0,0), Point(0, 0, 0),"images/court.jpg", 1, LENGTH, WIDTH);
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(1,0,0), Point(0, 0, 0),"img/court.jpg", 1, LENGTH, WIDTH);
     this->_number_of_forms++;
 
     // top
-    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(1,0,0), Point(0, HEIGHT, 0),"images/plafond.jpg", 10, LENGTH, WIDTH);
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(1,0,0), Point(0, HEIGHT, 0),"img/ceiling.jpg", 10, LENGTH, WIDTH);
     this->_number_of_forms++;
 
         // Basketball
