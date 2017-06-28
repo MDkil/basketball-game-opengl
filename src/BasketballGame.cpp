@@ -155,14 +155,15 @@ void BasketballGame::loadForms()
     //Ring interior
     this->_forms_list[this->_number_of_forms] = new RingVertical(0.4,0.1,Point(7.5,3.05,0.5));
     this->_number_of_forms++;
-/*
+
     //Ring top
     this->_forms_list[this->_number_of_forms] = new RingHorizontal(0.5,0.4,Point(7.5,3.10,0.5));
     this->_number_of_forms++;
 
     //Ring bottom
     this->_forms_list[this->_number_of_forms] = new RingHorizontal(0.5,0.4,Point(7.5,3.,0.5));
-    this->_number_of_forms++;*/
+    this->_number_of_forms++;
+
 }
 
 void BasketballGame::start()
