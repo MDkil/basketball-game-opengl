@@ -13,7 +13,7 @@ Basketball::Basketball(Point pos, double radius, double mass, Color color, Baske
     this->_throwed = false;
     this->_mass = mass;
     this->_context = context;
-    ball = loadTexture(BASKETBALL_IMAGE.c_str());
+    _ball = loadTexture(BASKETBALL_IMAGE.c_str());
 }
 
 Basketball::~Basketball()
@@ -31,7 +31,7 @@ void Basketball::render()
     gluQuadricTexture(quad, GL_TRUE);
     glEnable(GL_TEXTURE_2D);
 
-    glBindTexture(GL_TEXTURE_2D, ball);
+    glBindTexture(GL_TEXTURE_2D, _ball);
 
     gluSphere(quad, getRadius(), 1000, 1000);
 

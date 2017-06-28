@@ -3254,19 +3254,19 @@
 	"geometry.h"
 	"forms.h"
 
-1498517286 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\animation.cpp
+1498658825 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\animation.cpp
 	"Animation.h"
 
-1498517027 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\animation.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\animation.h
 	"Vector.h"
 
 1498225871 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\geometry.h
 	<iostream>
 
-1498226454 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\first_prog.cpp
+1498658897 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\first_prog.cpp
 	"BasketballGame.h"
 
-1498579094 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\basketballgame.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\basketballgame.h
 	<iostream>
 	<cmath>
 	<SDL2/SDL.h>
@@ -3275,7 +3275,7 @@
 	"Form.h"
 	"Basketball.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl.h
 	"SDL_main.h"
 	"SDL_stdinc.h"
 	"SDL_assert.h"
@@ -3306,12 +3306,12 @@
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_main.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_main.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_stdinc.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_stdinc.h
 	"SDL_config.h"
 	<sys/types.h>
 	<stdio.h>
@@ -3340,34 +3340,34 @@
 	<stdlib.h>
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_config.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_config.h
 	"SDL_platform.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_platform.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_platform.h
 	"AvailabilityMacros.h"
 	"TargetConditionals.h"
 	<winapifamily.h>
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\begin_code.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\begin_code.h
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\close_code.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\close_code.h
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_assert.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_assert.h
 	"SDL_config.h"
 	"begin_code.h"
 	<signal.h>
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_atomic.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_atomic.h
 	"SDL_stdinc.h"
 	"SDL_platform.h"
 	"begin_code.h"
 	<mbarrier.h>
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_audio.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_audio.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_endian.h"
@@ -3377,24 +3377,24 @@
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_error.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_error.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_endian.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_endian.h
 	"SDL_stdinc.h"
 	<endian.h>
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_mutex.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_mutex.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_thread.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_thread.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_atomic.h"
@@ -3403,18 +3403,18 @@
 	<process.h>
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_rwops.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_rwops.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_clipboard.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_clipboard.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_cpuinfo.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_cpuinfo.h
 	"SDL_stdinc.h"
 	<intrin.h>
 	<intrin.h>
@@ -3426,7 +3426,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_events.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_events.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -3440,7 +3440,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_video.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_video.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -3448,12 +3448,12 @@
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_pixels.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_pixels.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_rect.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_rect.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_pixels.h"
@@ -3461,7 +3461,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_surface.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_surface.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -3470,11 +3470,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_blendmode.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_blendmode.h
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_keyboard.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_keyboard.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_keycode.h"
@@ -3482,27 +3482,27 @@
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_keycode.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_keycode.h
 	"SDL_stdinc.h"
 	"SDL_scancode.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_scancode.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_scancode.h
 	"SDL_stdinc.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_mouse.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_mouse.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_joystick.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_joystick.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_gamecontroller.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_gamecontroller.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_rwops.h"
@@ -3510,11 +3510,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_quit.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_quit.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_gesture.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_gesture.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -3522,60 +3522,60 @@
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_touch.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_touch.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_filesystem.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_filesystem.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_haptic.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_haptic.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_joystick.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_hints.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_hints.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_loadso.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_loadso.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_log.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_log.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_messagebox.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_messagebox.h
 	"SDL_stdinc.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_power.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_power.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_render.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_render.h
 	"SDL_stdinc.h"
 	"SDL_rect.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_system.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_system.h
 	"SDL_stdinc.h"
 	"SDL_keyboard.h"
 	"SDL_render.h"
@@ -3583,24 +3583,24 @@
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_timer.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_timer.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_version.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_version.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_opengl.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_opengl.h
 	"SDL_config.h"
 	"gl_mangle.h"
 	<windows.h>
 	"SDL_opengl_glext.h"
 
-1451768294 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_opengl_glext.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_opengl_glext.h
 	<windows.h>
 	<stddef.h>
 	<inttypes.h>
@@ -3624,46 +3624,47 @@
 	<cmath>
 	"geometry.h"
 
-1498597003 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\basketballgame.cpp
+1498658825 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\basketballgame.cpp
 	"BasketballGame.h"
 	"CubFace.h"
 	"define.h"
 	"Basketball.h"
 
-1498488812 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\form.cpp
+1498658825 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\form.cpp
 	"Form.h"
 	<cmath>
 	<SDL2/SDL_opengl.h>
 	<GL/GLU.h>
 
-1498595720 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\form.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\form.h
 	"Color.h"
 	"Animation.h"
 	"Form.h"
 	"Vector.h"
+	"sdlglutils.h"
 
-1498230225 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\vector.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\vector.h
 	<iostream>
 	"Point.h"
 
-1498225945 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\coordinates.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\coordinates.h
 
-1498591637 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\point.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\point.h
 	"Coordinates.h"
 
-1498225949 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\color.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\color.h
 
-1498595739 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\cubface.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\cubface.h
 	"Form.h"
 	"Vector.h"
 
-1498226954 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\color.cpp
+1498658825 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\color.cpp
 	"Color.h"
 
-1498226957 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\coordinates.cpp
+1498658825 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\coordinates.cpp
 	"Coordinates.h"
 
-1498597125 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\cubface.cpp
+1498658825 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\cubface.cpp
 	"CubFace.h"
 	<cmath>
 	<SDL2/SDL_opengl.h>
@@ -3671,40 +3672,41 @@
 	"define.h"
 	"Basketball.h"
 
-1498591647 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\point.cpp
+1498658825 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\point.cpp
 	"Point.h"
 	"Vector.h"
 
-1498595863 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\sphere.cpp
+1498658825 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\sphere.cpp
 	"Sphere.h"
 	<cmath>
 	<SDL2/SDL_opengl.h>
 	<GL/GLU.h>
 
-1498595760 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\sphere.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\sphere.h
 	"Form.h"
 	"Vector.h"
 
-1498230256 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\vector.cpp
+1498658825 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\vector.cpp
 	"Vector.h"
 	<iostream>
 	<cmath>
 
-1498595910 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\basketball.cpp
+1498658825 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\basketball.cpp
 	"Basketball.h"
 	<GL/GLU.h>
 	<stdlib.h>
 	"BasketballGame.h"
 	"define.h"
+	"sdlglutils.h"
 
-1498578820 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\basketball.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\basketball.h
 	"string.h"
 	"Vector.h"
 	"Color.h"
 	"Sphere.h"
 	"Form.h"
 
-1498597111 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\define.h
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\define.h
 
 1498643675 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\animation.cpp
 	"Animation.h"
@@ -3721,7 +3723,7 @@
 
 1498643675 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\coordinates.h
 
-1498657776 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketball.cpp
+1498660013 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketball.cpp
 	"Basketball.h"
 	<GL/GLU.h>
 	<stdlib.h>
@@ -3729,7 +3731,7 @@
 	"define.h"
 	"sdlglutils.h"
 
-1498657768 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketball.h
+1498660025 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketball.h
 	"string.h"
 	"Vector.h"
 	"Color.h"
@@ -3742,14 +3744,15 @@
 	"Form.h"
 	"Vector.h"
 
-1498644417 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\form.h
+1498663215 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\form.h
+	<math.h>
 	"Color.h"
 	"Animation.h"
 	"Form.h"
 	"Vector.h"
 	"sdlglutils.h"
 
-1498643675 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketballgame.h
+1498665335 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketballgame.h
 	<iostream>
 	<cmath>
 	<SDL2/SDL.h>
@@ -4095,9 +4098,11 @@
 
 1498643675 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\define.h
 
-1498656959 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketballgame.cpp
+1498665248 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketballgame.cpp
 	"BasketballGame.h"
 	"CubFace.h"
+	"RingVertical.h"
+	"RingHorizontal.h"
 	"define.h"
 	"Basketball.h"
 
@@ -4119,7 +4124,7 @@
 	"define.h"
 	"Basketball.h"
 
-1498643675 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\first_prog.cpp
+1498659636 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\first_prog.cpp
 	"BasketballGame.h"
 
 1498643675 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\form.cpp
@@ -4160,13 +4165,38 @@
 	"begin_code.h"
 	"close_code.h"
 
-1498658864 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\ringvertical.cpp
-	"RingVertical.h"
-	<cmath>
-	<SDL2/SDL_opengl.h>
-	<GL/GLU.h>
-	"define.h"
+1498643675 D
 
-1498658899 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\ringvertical.h
+1498665762 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\ringvertical.cpp
+	"RingVertical.h"
+
+1498664732 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\ringvertical.h
+	"Basketball.h"
+	"Form.h"
+
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\sdlglutils.h
+	<GL/gl.h>
+
+1498658825 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\sdlglutils.cpp
+	"sdlglutils.h"
+	<SDL2/SDL.h>
+	<SDL2/SDL_image.h>
+	<GL/glu.h>
+	<cstring>
+	<cstdlib>
+
+1498658825 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1498658825 5dd5a2113a7f7d2676f5b3c78bd9deab9a098
+
+1498664773 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\ringhorizontal.cpp
+	"RingHorizontal.h"
+
+1498664768 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\ringhorizontal.h
+	"Basketball.h"
 	"Form.h"
 

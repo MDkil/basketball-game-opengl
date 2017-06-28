@@ -7,8 +7,8 @@ using namespace std;
 /* Constants declarations                                                  */
 /***************************************************************************/
 // Screen dimension constants
-const int SCREEN_WIDTH = 640;
-const int SCREEN_HEIGHT = 480;
+const int SCREEN_WIDTH = 1500;
+const int SCREEN_HEIGHT = 900;
 
 /***************************************************************************/
 /* MAIN Function                                                           */

@@ -63,6 +63,10 @@
 		<Unit filename="src/Form.h" />
 		<Unit filename="src/Point.cpp" />
 		<Unit filename="src/Point.h" />
+		<Unit filename="src/RingHorizontal.cpp" />
+		<Unit filename="src/RingHorizontal.h" />
+		<Unit filename="src/RingVertical.cpp" />
+		<Unit filename="src/RingVertical.h" />
 		<Unit filename="src/Sphere.cpp" />
 		<Unit filename="src/Sphere.h" />
 		<Unit filename="src/Vector.cpp" />

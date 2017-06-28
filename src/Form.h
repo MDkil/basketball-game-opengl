@@ -1,6 +1,6 @@
 #ifndef FORM_H
 #define FORM_H
-
+#include <math.h>
 #include "Color.h"
 #include "Animation.h"
 #include "Form.h"
