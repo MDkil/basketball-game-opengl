@@ -21,6 +21,7 @@ class BasketballGame
     public:
         BasketballGame(int screen_width, int screen_height);
         void start();
+        void instructions();
 
         virtual ~BasketballGame();
 

@@ -179,6 +179,8 @@ void BasketballGame::loadForms()
 
 void BasketballGame::start()
 {
+    instructions();
+
     // Main loop flag
     bool quit = false;
     Uint32 current_time, previous_time, elapsed_time;
@@ -347,6 +349,33 @@ void BasketballGame::start()
     this->close(&this->_window);
 }
 
+// Displaying the manual on the console
+void BasketballGame::instructions() {
+    cout << "Manuel d'utilisation : " << endl;
+    cout << "Camera" << endl;
+    cout << "Z - Avancer la camera" << endl;
+    cout << "S - Reculer la camera" << endl;
+    cout << "Q - Deplacer la camera vers la gauche" << endl;
+    cout << "D - Deplacer la camera vers la droite" << endl;
+    cout << "R - Monter la camera" << endl;
+    cout << "F - Descendre la camera" << endl;
+    cout << endl;
+    cout << "Ballon" << endl;
+    cout << "Fleche du haut - Avancer le ballon" << endl;
+    cout << "Fleche du bas - Reculer le ballon" << endl;
+    cout << "Fleche de gauche - Deplacer le ballon vers la gauche" << endl;
+    cout << "Fleche de droite - Deplacer le ballon vers la droite" << endl;
+    cout << endl;
+    cout << "Lancer le ballon" << endl;
+    cout << "I - Baisser l'angle de tir" << endl;
+    cout << "K - Augmenter l'angle de tir" << endl;
+    cout << "J - Deplacer l'angle de tir vers la gauche" << endl;
+    cout << "L - Deplacer l'angle de tir vers la droite" << endl;
+    cout << "P - Augmenter la puissance de tir" << endl;
+    cout << "M - Baisser la puissance de tir" << endl;
+    cout << "Backspace - Reinitialiser la position de la balle" << endl;
+    cout << "Espace - Lancer la balle" << endl;
+}
 
 // Updating forms for animation
 void BasketballGame::update(double delta_t)
