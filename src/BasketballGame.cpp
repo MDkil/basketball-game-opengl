@@ -76,6 +76,15 @@ bool BasketballGame::initSDL()
                 }
             }
         }
+
+        if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, MIX_DEFAULT_CHANNELS, 1024) == -1) {
+            cout << "SDL could not initialize sound! SDL Error: " << Mix_GetError() << endl;
+            success = false;
+        } else {
+            Mix_Music *music = Mix_LoadMUS("music/Jinsang_Summers_Day.mp3");
+
+            Mix_PlayMusic(music, -1);
+        }
     }
 
     return success;
@@ -120,7 +129,7 @@ bool BasketballGame::initGL()
 void BasketballGame::loadForms()
 {
     // front
-    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,1,0), Point(0, 0, 0),"img/wall.jpg", 1, WIDTH, 10.f);
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(1,0,0), Vector(0,1,0), Point(0, 0, 0),"img/wallFront2.jpg", 1, WIDTH, 10.f);
     this->_number_of_forms++;
 
     // Back
@@ -136,7 +145,7 @@ void BasketballGame::loadForms()
     this->_number_of_forms++;
 
     // buttom
-    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(1,0,0), Point(0, 0, 0),"img/court.jpg", 1, LENGTH, WIDTH);
+    this->_forms_list[this->_number_of_forms] = new CubeFace(Vector(0,0,1), Vector(1,0,0), Point(0, 0, 0),"img/court2.jpg", 1, LENGTH, WIDTH);
     this->_number_of_forms++;
 
     // top

@@ -4,6 +4,7 @@
 #include <iostream>
 #include <cmath>
 #include <SDL2/SDL.h>
+#include <SDL2/SDL_mixer.h>
 #include <SDL2/SDL_opengl.h>
 #include <GL/GLU.h>
 

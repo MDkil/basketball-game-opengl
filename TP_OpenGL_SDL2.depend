@@ -3731,7 +3731,7 @@
 	"define.h"
 	"sdlglutils.h"
 
-1498660025 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketball.h
+1498722111 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketball.h
 	"string.h"
 	"Vector.h"
 	"Color.h"
@@ -3752,10 +3752,11 @@
 	"Vector.h"
 	"sdlglutils.h"
 
-1498666120 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketballgame.h
+1498722004 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketballgame.h
 	<iostream>
 	<cmath>
 	<SDL2/SDL.h>
+	<SDL2/SDL_mixer.h>
 	<SDL2/SDL_opengl.h>
 	<GL/GLU.h>
 	"Form.h"
@@ -4098,7 +4099,7 @@
 
 1498643675 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\define.h
 
-1498667840 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketballgame.cpp
+1498729740 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketballgame.cpp
 	"BasketballGame.h"
 	"CubFace.h"
 	"RingVertical.h"
@@ -4193,10 +4194,19 @@
 
 1498658825 5dd5a2113a7f7d2676f5b3c78bd9deab9a098
 
-1498667881 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\ringhorizontal.cpp
+1498668215 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\ringhorizontal.cpp
 	"RingHorizontal.h"
 
 1498664768 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\ringhorizontal.h
 	"Basketball.h"
 	"Form.h"
+
+1451769408 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\include\sdl2\sdl_mixer.h
+	"SDL_stdinc.h"
+	"SDL_rwops.h"
+	"SDL_audio.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
 

@@ -24,7 +24,7 @@ class Basketball : public Sphere
 
         bool _throwed;
     private:
-        const std::string BASKETBALL_IMAGE = "img/Basketball2.jpg";
+        const std::string BASKETBALL_IMAGE = "img/Basketball.jpg";
         GLuint _ball;
         double _mass;
         BasketballGame * _context;
