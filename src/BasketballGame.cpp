@@ -185,8 +185,8 @@ void BasketballGame::start()
     SDL_Event event;
 
     // Camera position
-    Point camera_position(WIDTH/2.f, 2.f, LENGTH/2.f + 4.f);
-    Point vision_position(WIDTH/2.f, 2.f, 0);
+    Point camera_position(WIDTH/2.f, 3.f, LENGTH/2.f + 4.f);
+    Point vision_position(WIDTH/2.f, 3.f, 0);
 
     Point tmpPos;
     // Get first "current time"
@@ -220,11 +220,14 @@ void BasketballGame::start()
 
                 case SDLK_BACKSPACE:
                     this->_basketball->reset(Point(WIDTH/2.f, 2, LENGTH/2.f));
+                    //this->_force = Vector (INIT_FORCE);
+                    break;
+                case SDLK_v:
                     this->_force = Vector (INIT_FORCE);
                     break;
 
                 case SDLK_SPACE:
-                    this->_basketball->throw_action(this->_force);
+                    this->_basketball->throw_action(2.f * this->_force);
                     break;
 
                 case SDLK_z:
@@ -253,10 +256,16 @@ void BasketballGame::start()
                     break;
 
                 case SDLK_r:
-                    camera_position.y += MOVE_STEP;
+                    if((camera_position.y + MOVE_STEP) < HEIGHT)
+                    {
+                        camera_position.y += MOVE_STEP;
+                    }
                     break;
                 case SDLK_f:
-                    camera_position.y -= MOVE_STEP;
+                    if((camera_position.y - MOVE_STEP) > 0)
+                    {
+                        camera_position.y -= MOVE_STEP;
+                    }
                     break;
 
                 case SDLK_UP:
@@ -284,11 +293,11 @@ void BasketballGame::start()
                     break;
 
                 case SDLK_i:
-                    this->_force += Vector(0, MOVE_STEP, 0);
+                    this->_force += Vector(0, 0, -MOVE_STEP);
                     break;
 
                 case SDLK_k:
-                    this->_force += Vector(0, -MOVE_STEP, 0);
+                    this->_force += Vector(0, 0, MOVE_STEP);
                     break;
 
                 case SDLK_l:
@@ -300,11 +309,11 @@ void BasketballGame::start()
                     break;
 
                 case SDLK_p:
-                    this->_force += Vector(0, 0, -MOVE_STEP);
+                    this->_force = (1.f+MOVE_STEP) * this->_force;
                     break;
 
                 case SDLK_m:
-                    this->_force += Vector(0, 0, MOVE_STEP);
+                    this->_force = (1.f/(1.f+MOVE_STEP)) * this->_force;
                     break;
 
                 default:
@@ -396,14 +405,15 @@ void BasketballGame::render(const Point &cam_pos, const Point &vision_pos)
         glPopMatrix(); // Restore the camera viewing point for next object
         i++;
     }
+    // my force vector
     if(!this->_basketball->_throwed)
     {
         Point pos = this->_basketball->getAnim().getPos();
-        CubeFace * _tmp = new CubeFace(Vector(1,0,0), this->_force, Point(pos.x - 0.01f, pos.y, pos.z),"", 0.02f, this->_force.norm());
+        CubeFace * _tmp = new CubeFace(Vector(1,0,0), this->_force, Point(pos.x - 0.01f, pos.y, pos.z),"", 1, 0.02f, this->_force.norm());
         _tmp->render();
         delete _tmp;
     }
-    // my force vector
+
 
 }
 

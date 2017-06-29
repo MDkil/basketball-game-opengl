@@ -9,7 +9,7 @@
 
 #define GRAVITY 10
 
-#define INIT_FORCE 0, 10, -10
+#define INIT_FORCE 0, 4, -4
 
 #define BORDER_RESISTANCE 0.2
 

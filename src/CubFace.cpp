@@ -8,7 +8,7 @@
 
 using namespace std;
 
-CubeFace::CubeFace(Vector v1, Vector v2, Point org,char* tex, int divImage, double l, double w)
+CubeFace::CubeFace(Vector v1, Vector v2, Point org,char* text, int divImage, double l, double w)
 {
     this->_vdir1 = 1.0 / v1.norm() * v1;
     this->_vdir2 = 1.0 / v2.norm() * v2;
@@ -16,7 +16,7 @@ CubeFace::CubeFace(Vector v1, Vector v2, Point org,char* tex, int divImage, doub
     this->_divImage = divImage;
     this->_length = l;
     this->_width = w;
-    this->_texture = loadTexture(tex);
+    this->_texture = loadTexture(text);
 }
 
 
