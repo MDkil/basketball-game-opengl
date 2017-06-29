@@ -45,6 +45,7 @@
 			<Add library="SDL2_image" />
 			<Add library="opengl32" />
 			<Add library="glu32" />
+			<Add library="lib\SDL2_mixer.lib" />
 			<Add directory="./lib" />
 		</Linker>
 		<Unit filename="src/Animation.cpp" />

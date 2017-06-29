@@ -48,9 +48,7 @@ bool CubeFace::collusion(Basketball * basketball)
         basketball->getAnim().setSpeed(speed);
 
         return true;
-
     }
-
 
     return false;
 }

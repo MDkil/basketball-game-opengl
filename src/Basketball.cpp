@@ -24,6 +24,17 @@ void Basketball::render()
 {
     Form::render();
 
+    // Lighting
+    glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHT0);
+    glEnable(GL_COLOR_MATERIAL);
+    GLfloat positions[4];
+    positions[0] = WIDTH/2.f;
+    positions[1] = HEIGHT - 1;
+    positions[2] = LENGTH/2.f;
+    positions[3] = 0.0;
+    glLightfv(GL_LIGHT0, GL_POSITION, positions);
+
     GLUquadricObj *quad;
 
     quad = gluNewQuadric();
@@ -36,6 +47,9 @@ void Basketball::render()
     gluSphere(quad, getRadius(), 1000, 1000);
 
     gluDeleteQuadric(quad);
+
+    glDisable(GL_LIGHTING);
+    glDisable(GL_LIGHT0);
 }
 
 void Basketball::update(double delta_t)

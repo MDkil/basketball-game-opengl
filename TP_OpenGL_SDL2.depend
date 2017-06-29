@@ -3726,7 +3726,7 @@
 
 1498643675 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\coordinates.h
 
-1498660013 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketball.cpp
+1498751585 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketball.cpp
 	"Basketball.h"
 	<GL/GLU.h>
 	<stdlib.h>
@@ -4100,9 +4100,9 @@
 	<stdint.h>
 	<inttypes.h>
 
-1498643675 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\define.h
+1498730485 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\define.h
 
-1498729740 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketballgame.cpp
+1498750295 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\basketballgame.cpp
 	"BasketballGame.h"
 	"CubFace.h"
 	"RingVertical.h"
@@ -4120,7 +4120,7 @@
 1498643675 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\coordinates.cpp
 	"Coordinates.h"
 
-1498647772 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\cubface.cpp
+1498734596 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\cubface.cpp
 	"CubFace.h"
 	<cmath>
 	<SDL2/SDL_opengl.h>
@@ -4169,7 +4169,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1498643675 D
+1498664768 D
 
 1498668139 source:d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\src\ringvertical.cpp
 	"RingVertical.h"
@@ -4204,7 +4204,6 @@
 	"Basketball.h"
 	"Form.h"
 
-<<<<<<< HEAD
 1451769408 d:\ecole\polytech\1er année\projet_interspé_basketball\basket9\include\sdl2\sdl_mixer.h
 	"SDL_stdinc.h"
 	"SDL_rwops.h"
@@ -4213,7 +4212,9 @@
 	"SDL_version.h"
 	"begin_code.h"
 	"close_code.h"
-=======
+
+1451769408 e.h"
+
 1498678847 \\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\ringvertical.h
 	"Basketball.h"
 	"Form.h"
@@ -4227,5 +4228,6 @@
 
 1498678847 source:\\mac\home\documents\study\polytech\app3\projet\basketball-game-opengl\src\ringvertical.cpp
 	"RingVertical.h"
->>>>>>> 6e798af277e8df1a5b2cba61ce529944d2ab1070
+
+1498678847 98af277e8df1a5b2cba61ce529944d2ab1070
 

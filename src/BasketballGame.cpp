@@ -87,8 +87,11 @@ bool BasketballGame::initSDL()
         }
     }
 
+
     return success;
 }
+
+
 
 bool BasketballGame::initGL()
 {
@@ -122,7 +125,6 @@ bool BasketballGame::initGL()
         cout << "Error initializing OpenGL!  " << gluErrorString( error ) << endl;
         success = false;
     }
-
     return success;
 }
 
