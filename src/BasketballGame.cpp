@@ -273,27 +273,39 @@ void BasketballGame::start()
                     break;
 
                 case SDLK_UP:
-                    tmpPos = this->_basketball->getAnim().getPos();
-                    tmpPos.translate(Vector(0, 0, -MOVE_STEP));
-                    this->_basketball->getAnim().setPos(tmpPos);
+                    if((this->_basketball->getAnim().getPos().z - MOVE_STEP) > 0)
+                    {
+                        tmpPos = this->_basketball->getAnim().getPos();
+                        tmpPos.translate(Vector(0, 0, -MOVE_STEP));
+                        this->_basketball->getAnim().setPos(tmpPos);
+                    }
                     break;
 
                 case SDLK_DOWN:
-                    tmpPos = this->_basketball->getAnim().getPos();
-                    tmpPos.translate(Vector(0, 0, MOVE_STEP));
-                    this->_basketball->getAnim().setPos(tmpPos);
+                    if((this->_basketball->getAnim().getPos().z + MOVE_STEP) < LENGTH)
+                    {
+                        tmpPos = this->_basketball->getAnim().getPos();
+                        tmpPos.translate(Vector(0, 0, MOVE_STEP));
+                        this->_basketball->getAnim().setPos(tmpPos);
+                    }
                     break;
 
                 case SDLK_RIGHT:
-                    tmpPos = this->_basketball->getAnim().getPos();
-                    tmpPos.translate(Vector(MOVE_STEP, 0, 0));
-                    this->_basketball->getAnim().setPos(tmpPos);
+                    if((this->_basketball->getAnim().getPos().x + MOVE_STEP) < WIDTH)
+                    {
+                        tmpPos = this->_basketball->getAnim().getPos();
+                        tmpPos.translate(Vector(MOVE_STEP, 0, 0));
+                        this->_basketball->getAnim().setPos(tmpPos);
+                    }
                     break;
 
                 case SDLK_LEFT:
-                    tmpPos = this->_basketball->getAnim().getPos();
-                    tmpPos.translate(Vector(-MOVE_STEP, 0, 0));
-                    this->_basketball->getAnim().setPos(tmpPos);
+                    if((this->_basketball->getAnim().getPos().x - MOVE_STEP) > 0)
+                    {
+                        tmpPos = this->_basketball->getAnim().getPos();
+                        tmpPos.translate(Vector(-MOVE_STEP, 0, 0));
+                        this->_basketball->getAnim().setPos(tmpPos);
+                    }
                     break;
 
                 case SDLK_i:

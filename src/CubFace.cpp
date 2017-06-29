@@ -39,10 +39,10 @@ bool CubeFace::collusion(Basketball * basketball)
 
         basketball->getAnim().setSpeed(speed);
 
-        while(abs(vecteur_normal * Vector(this->getAnim().getPos(), basketball->getAnim().getPos()) < basketball->getRadius()))
+        while(abs(vecteur_normal * Vector(this->getAnim().getPos(), basketball->getAnim().getPos())) < basketball->getRadius())
         {
             Point pos = basketball->getAnim().getPos();
-            pos.translate(0.02 * speed);
+            pos.translate(0.001 * speed);
             basketball->getAnim().setPos(pos);
         }
 

@@ -73,12 +73,11 @@ bool RingHorizontal::collusion(Basketball * basketball) {
 
     speed =  (1.f - BORDER_RESISTANCE )* speed ;
 
-
     while(this->isCollusion(basketball))
     {
         basketball->getAnim().setSpeed(speed);
         Point pos = basketball->getAnim().getPos();
-        pos.translate(0.01 * speed);
+        pos.translate(0.001 * speed);
         basketball->getAnim().setPos(pos);
     }
 
