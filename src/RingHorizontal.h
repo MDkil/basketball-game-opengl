@@ -13,7 +13,9 @@ public:
     RingHorizontal(float R1 = 1.0, float R2 = 1.0, Point org = Point() );
     void render();
     void update(double delta_t);
+    bool isCollusion(Basketball * basketball);
     bool collusion(Basketball * basketball);
+    Vector normal();
 };
 
 #endif // RINGHORIZONTAL_H

@@ -30,22 +30,21 @@ bool CubeFace::collusion(Basketball * basketball)
     if(distance < basketball->getRadius())
     {
         Vector speed = basketball->getAnim().getSpeed();
-        if(vecteur_normal.x != 0)
-        {
-            speed.x *= -1;
-        }
-        if(vecteur_normal.y != 0)
-        {
-            speed.y *= -1;
-        }
-        if(vecteur_normal.z != 0)
-        {
-            speed.z *= -1;
-        }
+
+        speed.x += -2 * abs(vecteur_normal.x) * speed.x;
+        speed.y += -2 * abs(vecteur_normal.y) * speed.y;
+        speed.z += -2 * abs(vecteur_normal.z) * speed.z;
 
         speed =  (1.f - BORDER_RESISTANCE )* speed ;
 
         basketball->getAnim().setSpeed(speed);
+
+        while(abs(vecteur_normal * Vector(this->getAnim().getPos(), basketball->getAnim().getPos()) < basketball->getRadius()))
+        {
+            Point pos = basketball->getAnim().getPos();
+            pos.translate(0.02 * speed);
+            basketball->getAnim().setPos(pos);
+        }
 
         return true;
     }

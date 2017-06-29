@@ -76,7 +76,7 @@ void Basketball::update(double delta_t)
 
             if(collusion)
             {
-                this->_animation.setPos(pos);
+                //this->_animation.setPos(pos);
             }
 
             i++;
